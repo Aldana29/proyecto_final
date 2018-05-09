@@ -1,0 +1,32 @@
+header {width:100%;
+    background-color: rgb(8, 128, 128);
+    height: 80px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000000000;
+}
+.logo {width: 50%;
+padding-left: 20px;
+text-align: center;
+color:white;}
+
+.logo a p {font-family: 'Fira Sans Condensed 900', sans-serif;    
+     font-size: 60px;
+    padding-top: 5px;
+    font-weight: 600;}
+
+   
+.main-menu {font-family: 'Fira Sans Condensed 300', sans-serif;
+width:50%;
+float: right;
+font-size: 22px;
+display:block;
+margin-top: -45px;
+color: white;
+
+}
+
+.main-menu a { padding-left:20px;
+padding-right:20px;
+}

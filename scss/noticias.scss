@@ -1,0 +1,35 @@
+.ultimas_noticias {width:95%;
+    min-height: 460px;
+    background-color:rgb(8, 128, 128);;
+    padding: 1%;
+    margin:auto;}
+    
+    .ultimas_noticias p {float:right;
+    width: 50%;
+    color: white;
+    font-size:16px;
+    padding-left: 1%;
+    padding-right: 2%;
+    line-height: 23px;
+     text-align: justify;}
+    
+    .cleaner {clear: both;}
+    
+    .contenedor-foto-1 {width: 100%;
+    /*padding-left: 0px;
+    padding-top: 10px;*/
+    padding-left:2%;
+    /*padding-right: 1%;*/
+    padding-top: 1.5%;
+    }
+    
+    .contenedor-foto-1 img {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);}
+    
+    .subtitulo {font-size: 25px;
+        
+        line-height: 30px;
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;}
+    
+    

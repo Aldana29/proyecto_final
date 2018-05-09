@@ -1,0 +1,56 @@
+.contacto{ width:95%;
+    height: 450px;
+    margin: auto;
+    background-color: rgb(8, 128, 128);
+        padding-top: 20px;
+    border: none;}
+
+h3{ font-family: 'Fira Sans Condensed', sans-serif; 
+    color:white;;
+   font-size: 20px;
+text-align: left; 
+font-weight: 400;}
+
+input[type=text]{width:100%;
+background-color: white;
+color:rgb(8, 128, 128)}
+
+
+input[type=button], input[type=submit], input[type=reset], {
+    background-color: white;
+    border: none;
+    color: rgb(8, 128, 128);
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    width: 45%;
+    height: 10%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+label {font-size: 1.8rem;
+    font-weight: 300;}
+
+#country {width: 100%;}
+
+form {width: 100%;
+     color:white;
+padding-left:40%;
+padding-right:40%;
+line-height: 3.5rem;
+border: snow solid;
+border-top-width: 0.1rem;
+
+}
+
+h4 {background-color: rgb(8, 128, 128);
+width:95%;
+margin:auto;
+font-family: 'Fira Sans Condensed 900', sans-serif; 
+    color:white;;
+   font-size: 40px;
+text-align: center}
+
+.pais {margin-top: -20px;}

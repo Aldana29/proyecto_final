@@ -1,0 +1,25 @@
+.la-banda {width:95%;
+    min-height: 740px;
+    margin: auto;
+    margin-top: 0px;
+    background-color: rgb(8, 128, 128);
+    padding-top: 20px;}
+
+.la-banda ul {margin-right: 10px;
+            margin-left:10px;
+        padding:35px;
+    padding-top:0;}
+
+.la-banda ul li {width: 33.33%;
+    float: left;    
+   display:block;
+color: white;
+font-size:2.2rem;
+text-align: center;
+padding: 0;
+line-height: 2.2rem;
+padding-top: 30px;}   
+
+.la-banda ul li p {font-size: 1.5rem;}
+
+.la-banda ul li img {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);}
