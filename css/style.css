@@ -445,13 +445,126 @@ h4 {
 .pais {
   margin-top: -20px; }
 
-footer {width: 100%;
-  text-align: center;}
 
-
+  footer {width: 100%;
+    text-align: center;}
 /*-------------------------------------------------------------------------MEDIA QUERIES-------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------400-------------------------------------------------------------------------*/
+
+/*-----------------------------------------------960---------------------------------------------------------------------*/
+
+@media  (max-width: 960px) { 
+  .logo a p {    
+      font-size: 45px;
+     padding-top: 14px;
+  font-weight: 600;}
+
+  .main-menu {
+      width:50%;
+      
+      font-size: 19px;
+      display:block;
+      margin-top: -36px;
+     
+      
+      }
+
+  .main-menu a { padding-left:6px;
+          padding-right:6px;
+          }
+
+  .slider { margin-top:40px;
+  height: 650px;}     
+
+/*------------------------------------------*/
+.ultimas_noticias {
+  height: 460px;
+  margin: auto;
+  margin-top: -110px;    
+  padding-top: 20px;
+  
+}
+
+.subtitulo {text-align: center;
+padding-left: 0px;
+padding-top: 10px;
+}
+
+
+.ultimas_noticias p {float:none;
+               width:80%;
+               margin:auto;
+               padding-left: 18px;
+               padding-top: 20px;}
+
+.contenedor-foto-1 {width: 60%;
+  margin-left:80px;
+  padding-top: 20px;
+  }
+
+/*----------------------------------------------*/
+
+
+.proximos-shows {
+  height: 320px;
+  margin: auto;
+  margin-top: 0px;
+  background-color: rgb(8, 128, 128);
+  padding-top: 410px;
+  }
+
+.proximos-shows ul {padding-left:10px;}
+
+
+/*------------------------------------------------------*/
+
+.la-banda {
+  height: 1150px;
+  margin: auto;
+  padding-top: 330px;}
+
+.la-banda ul {margin-right: 5px;
+      }
+
+.la-banda ul li {width: 33.33%;
+float: left;    
+display:block;
+color: white;
+font-size:1.8rem;
+text-align: center;
+padding: 0;
+line-height: 2.2rem;
+padding-top: 30px;
+}   
+
+.la-banda ul li p {font-size: 1.3rem;
+                width: 96%;
+              margin:auto;}
+
+.la-banda ul li img {width: 90%;}
+
+/*------------------------------------------------*/
+
+.historia-banda {
+  height: 1400px;}
+
+/*--------------------------------------------------*/
+
+.cds {padding-left: 120px;
+  }
+
+.cds p {text-align: center;
+  width: 150%;}
+
+.discografia { 
+      height: 1750px;}
+
+/*--------------------------------------------------------*/
+
+form {
+  padding-left:350px;}}
+
+  /*-----------------------------------------------------------------------400-------------------------------------------------------------------------*/
 @media (max-width: 400px) {
 
   .header {
@@ -461,7 +574,7 @@ footer {width: 100%;
 .logo {width: 100%;
    padding-left:0px;
    padding-right: 0px;
-   padding-top:10px;
+   padding-top:6px;
    }
    
    .logo a p {    
@@ -470,101 +583,139 @@ footer {width: 100%;
        }
                   
    .main-menu {background-color: rgb(8, 128, 128);
-   width:200%;
-   height: 55px;
-   margin-top: 5px;
-   padding-top: 10px;
+   width: 100%;
+   height: 51px;
+      padding-top: 15px;
+      padding-left: 10%;
+      margin:auto;
 float: none;
+font-size: 26px;
 }
-   
-   .main-menu a {padding-left: 45px;
-   }
+
+.main-menu a { padding-left:10px;
+  padding-right:10px;
+  }
   
-   .slider {width: 200%;
-       height: 400px;
-       margin-top: 130px;
+   .slider {width: 205%;
+       height: 450px;
+       margin-top: 128px;
    }
 /*---------------------------*/
-
-
-   .ultimas_noticias {width:200%;
-   height: 900px;
+   .ultimas_noticias {width:205%;
+   height: 902px;
    padding:0;
-   padding-top: 20px;
-   margin-top:-5px;
+   padding-top:45px;
+   margin-top:-4px;
 padding-left: 20px;}
 
    .ultimas_noticias p {float:none;
    margin:auto;
-padding-top:25px;
+padding-top:22px;
 width: 90%;
 text-align:justify;
-font-size: 2rem;}
+font-size: 2.8rem;
+line-height: 38px;
+height: 51%;
+overflow: hidden;}
+
+.contenedor-foto-1 {margin:auto;
+padding-left:0;
+width: 90%;
+padding-top: 3%;}
+
+.subtitulo {font-size:3rem;}
 
 /*----------------------------------------*/
    
-.proximos-shows {width: 200%;
-height: 900px;
-margin-top:0px;
+.proximos-shows {width: 205%;
+height: 860px;
 padding-right:35px;
 padding-top:60px;}   
 
-.proximos-shows ul li {width: 50%;
-  font-size: 2.5rem;
+.proximos-shows ul li {width: 54%;
+  font-size: 2.8rem;
    line-height: 3.8rem;
    float:none;
    margin:auto;
-   padding-top:30px;
+   padding-top:45px;
 
 }
 
+.proximos-shows ul {padding-top:10px;}
+
+
 /*--------------------------------------*/
-.la-banda {width:200%;
-   height: 1550px;}
+.la-banda {width:205%;
+   height: 1550px;
+  padding-top:10px;
+margin-top:-3px;}
 
 .la-banda ul li {width: 50%;
        float: left; 
-       font-size:2.4rem;
+       font-size:2.7rem;
+       font-weight: 600;
    line-height: 4rem;
    margin-top:20px;
+  
 }
 
-.la-banda ul li p {font-size: 2rem;
+.la-banda ul li p {width: 95%;
+  height: 150px;
+  overflow: hidden;
+    font-size: 2.5rem;
 line-height: 3.2rem;
 text-align: center;
-margin:6px;
+font-weight: 400;
+margin:10px;
+
 }
 
 /*-------------------------------*/
-.historia-banda {width:200%;
-   height: 1550px;
+.historia-banda {width:205%;
+   height: 900px;
    margin: auto;}
+
+.historia-banda p:nth-child(2) {display: none;}
 
 /*----------------------------------*/
 
-.discografia { width:200%;
-   height: 1750px;
-  margin-right: 0;
-padding-left:20%;}
+.discografia { width:205%;
+   height: 1752px;
+  }
 
+.cds {padding-left:9.5%;}
 
+.cds p {width: 138%;
+font-size: 2.5rem;}
   
 /*---------------------------------*/
 
-.contacto {width:200%;
-  height: 460px;
+.contacto {width:205%;
+  height: 452px;
   margin: auto;}
 
+
+h3 {font-size:2.5rem;}
+
 h4 {background-color: rgb(8, 128, 128);
-       width:200%;
-       margin:auto;}
+       width:205%;
+       margin:auto;
+      }
 
 form {padding:300px;
+  
 }
 
-input[type=text]{width:100%;}
+.contacto div{ width: 120%;
+padding-top:9%;}
+
+.pais {margin-top:-30px;}
+
+input[type=text]{width:102%;}
 
 footer {width: 200%;}
-
 }
 
+input[type=button], input[type=submit], input[type=reset], {font-size: 4rem;}
+
+select#country {width: 90%;}
