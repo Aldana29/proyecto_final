@@ -1,9 +1,11 @@
-.contacto{ width:95%;
+.contacto{ width:100%;
     height: 450px;
     margin: auto;
     background-color: rgb(8, 128, 128);
         padding-top: 20px;
     border: none;}
+
+#contacto {height: 450px;}
 
 h3{ font-family: 'Fira Sans Condensed', sans-serif; 
     color:white;;
@@ -16,6 +18,7 @@ background-color: white;
 color:rgb(8, 128, 128)}
 
 
+
 input[type=button], input[type=submit], input[type=reset], {
     background-color: white;
     border: none;
@@ -24,14 +27,15 @@ input[type=button], input[type=submit], input[type=reset], {
     text-decoration: none;
     margin: 0;
     cursor: pointer;
-    width: 45%;
+    width: 49%;
     height: 10%;
     font-size: 1.1rem;
     text-align: center;
 }
 
 label {font-size: 1.8rem;
-    font-weight: 300;}
+    font-weight: 300;
+color:white;}
 
 #country {width: 100%;}
 
@@ -54,3 +58,21 @@ font-family: 'Fira Sans Condensed 900', sans-serif;
 text-align: center}
 
 .pais {margin-top: -20px;}
+
+
+/*----------------960-----------------*/
+@media  (max-width: 960px) {
+    .contacto {height: 500px;}
+}
+/*----------------768-----------------*/
+@media  (max-width: 768px) {
+    form {padding-right: 20%;
+    padding-left:20%;}
+}
+
+
+/*----------------425-----------------*/
+@media  (max-width: 425px) {
+    form {padding-right: 20%;
+    padding-left:20%;}
+}

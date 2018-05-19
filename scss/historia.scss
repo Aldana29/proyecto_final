@@ -1,9 +1,10 @@
-.historia-banda {width:95%;
-    height: 900px;
+.historia-banda {width:100%;
+    height: auto;
     margin: auto;
     background-color: rgb(8, 128, 128);
     background-image: url(https://3.bp.blogspot.com/-UGXGiS9fwus/WYOTOYwzSJI/AAAAAAAAC6M/danwas_s3Qoq99O55U-pNLa0_M68mokbgCLcBGAs/s1600/FotoLaVElaNueva.jpg);
-    padding-top: 30px;}
+    padding-top: 3%;
+    padding-bottom: 3%;}
 
 .historia-banda p {color:white;
  width:80%;
@@ -16,3 +17,26 @@ background-color: rgba(168, 168, 168, 0.562);
 padding-left:30px ;
 padding-right:30px; 
 padding-top:20px;}
+
+
+/*----Queries---*/
+
+
+/*----------------768-----------------*/
+@media  (max-width: 768px) {
+    .historia-banda p:nth-child(odd){display:none;}
+    .historia-banda p {font-size: 1.8rem;
+        line-height: 2.8rem;}
+    }
+
+/*----------------425-----------------*/
+@media  (max-width: 425px) {
+    .historia-banda p { width: 90%;
+        padding-left:20px ;
+        padding-right:20px;
+    font-size:1.6rem;
+text-align:justify; 
+padding-bottom: 2%;
+line-height: 2.3rem;}
+
+}

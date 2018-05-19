@@ -1,35 +1,98 @@
-.ultimas_noticias {width:95%;
-    min-height: 460px;
+.ultimas_noticias {width: 100%;
+    min-height: 500px;
     background-color:rgb(8, 128, 128);;
     padding: 1%;
-    margin:auto;}
+    margin-top:-1%;
+    padding-top:3%;}
     
-    .ultimas_noticias p {float:right;
+    .ultimas_noticias p {
     width: 50%;
+    float:right;
     color: white;
-    font-size:16px;
-    padding-left: 1%;
-    padding-right: 2%;
-    line-height: 23px;
-     text-align: justify;}
+    font-size:2rem;
+    line-height: 2.5rem;
+     text-align: justify;
+    padding-right: 5%;
+    padding-top:2%;}
     
-    .cleaner {clear: both;}
+.cleaner {clear: both;}
     
-    .contenedor-foto-1 {width: 100%;
-    /*padding-left: 0px;
-    padding-top: 10px;*/
-    padding-left:2%;
-    /*padding-right: 1%;*/
-    padding-top: 1.5%;
-    }
+.contenedor-foto-1 {width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-top:2%;
+
+}
     
-    .contenedor-foto-1 img {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);}
+.contenedor-foto-1 img {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);}
     
-    .subtitulo {font-size: 25px;
+.subtitulo {font-size: 25px;
         
-        line-height: 30px;
+    line-height: 30px;
     border-bottom: white;
     border-bottom-style: solid;
     border-bottom-width: 0.5px;}
+
+.chica {display:none;}
+
+
     
+    /*----Queries---*/
+
+
+/*----------------960-----------------*/
+@media  (max-width: 960px) {
+
+    .ultimas_noticias p { float:none;
+    padding-right:0;
+    width: 80%;
+    margin:auto;}
+
+    .contenedor-foto-1 {float:none;
+    padding-left:0;
+    width: 80%;
+    margin:auto;}
+}
+
+
+
+/*----------------425-----------------*/
+@media  (max-width: 425px) {
+    .ultimas_noticias p { float:none;
+        padding-right:0;
+        width: 80%;
+        margin:auto;}
     
+        .contenedor-foto-1 {float:none;
+            margin-left:10%;
+            margin-right:10%;
+        padding-left:0;
+        
+        }
+
+        .grande {display: none;}
+        .chica {display:block;}
+    
+    }
+/*------------------375-----------------------*/
+
+@media  (max-width: 375px) {
+    .ultimas_noticias p { float:none;
+        padding-right:0;
+        width: 80%;
+        margin:auto;}
+    
+        .contenedor-foto-1 {float:none;
+          margin:auto;
+        padding-left:0;
+        
+        }
+
+        .grande {display: none;}
+        .chica {display:none;}
+        .subtitulo {font-size: 22px;
+        line-height: 18px;}
+        .ultimas_noticias p {font-size:1.7rem;}
+
+
+}

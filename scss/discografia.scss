@@ -1,4 +1,4 @@
-.discografia { width:95%;
+.discografia { width:100%;
     min-height: 920px;
     margin: auto;
     background-color: rgb(8, 128, 128);
@@ -8,7 +8,7 @@
 .cds {width: 280px;
     height: 280px;
      float:left;
-     margin-left:3.1%;
+     margin-left:3.9%;
      margin-right:3.1%;
      margin-top:6rem;
      margin-bottom:6rem;
@@ -30,17 +30,30 @@
 
 
 
-.descripcion {width: 280px;
-             height: 280px;
+.descripcion {width: 300px;
+             height: 300px;
              position: absolute;
             background-color:rgba(8, 128, 128,0.8);
             opacity:0;
-            font-size:2rem;
+            padding:0;
             color:white;
-            padding: 1rem;
             text-align: center; }
 
-.textocorrido {font-size: 1rem;}
+
+
+table td:nth-child(1) {width:5%;}
+
+table td:nth-child(2) {width:80%;}
+
+table td:nth-child(3) {width: 15%;}
+
+table td{border-bottom: solid 1px white;
+    padding: 0%;
+    border-spacing: 0px;
+}
+
+td {font-size:1.2rem;
+line-height: 1.8rem;}
 
 .imagen1:hover .descripcion {opacity:1;}
 
@@ -128,3 +141,44 @@
    }
 
 .imagen8:hover .descripcion {opacity:1;}
+
+/*----------------960-----------------*/
+@media  (max-width: 960px) {
+    .cds {padding-left: 125px;
+    }
+  
+  .cds p {text-align: center;
+    width: 170%;}
+  
+  .discografia { 
+        height: 1750px;}
+  
+}
+
+/*---------------768-----------*/
+@media  (max-width: 768px) {
+    .cds {padding-left:60px;
+    }
+    .cds p {text-align: center;
+        width: 130%;}
+}
+/*---------------720-----------*/
+@media  (max-width: 720px) {
+    .cds {padding-left:35px;
+    }
+}
+
+/*---------------425-----------*/
+@media  (max-width: 425px) {
+    .discografia {height:3300px;}
+
+
+}
+
+/*---------------364-----------*/
+@media  (max-width: 364px) {
+    .cds {padding-left:30px;
+    }
+
+    
+}

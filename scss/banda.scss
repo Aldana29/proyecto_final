@@ -1,9 +1,9 @@
-.la-banda {width:95%;
+.la-banda {width:100%;
     min-height: 740px;
     margin: auto;
     margin-top: 0px;
     background-color: rgb(8, 128, 128);
-    padding-top: 20px;}
+    }
 
 .la-banda ul {margin-right: 10px;
             margin-left:10px;
@@ -14,12 +14,35 @@
     float: left;    
    display:block;
 color: white;
-font-size:2.2rem;
 text-align: center;
 padding: 0;
 line-height: 2.2rem;
-padding-top: 30px;}   
+padding-top: 40px;}   
 
-.la-banda ul li p {font-size: 1.5rem;}
+
+.la-banda ul li p {font-size: 1.6rem;
+width: 96%;
+margin:auto;
+padding-top:1.2%;}
 
 .la-banda ul li img {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425);}
+
+.nombre {font-size:2.4rem;
+    padding-top: 1.5%;
+    font-weight: 600;
+    }
+
+/*----Queries---*/
+
+
+/*----------------960-----------------*/
+@media  (max-width: 960px) {
+    .la-banda ul li {width: 50%;}
+}
+
+/*----------------425-----------------*/
+@media  (max-width: 425px) {
+    .la-banda ul li {width: 100%;
+    float: none}
+
+}

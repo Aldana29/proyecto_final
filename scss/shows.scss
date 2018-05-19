@@ -1,9 +1,9 @@
-.proximos-shows {width:95%;
-    height: 320px;
+.proximos-shows {width:100%;
+    min-height: 320px;
     margin: auto;
  
     background-color: rgb(8, 128, 128);
-    padding-top: 40px;
+    padding-top: 0.5%;
     }
 
 .proximos-shows ul { padding-top: 50px;
@@ -23,3 +23,36 @@ line-height: 35px;}
     font-size:40px;
 background-color: white;
 color:rgb(8, 128, 128);  }
+
+/*----Queries---*/
+
+
+/*----------------960-----------------*/
+@media  (max-width: 960px) {
+    .proximos-shows ul li {font-size:15px;
+    line-height: 28px;}
+    .Fecha {font-size: 35px;}
+}
+
+/*----------------768-----------------*/
+@media  (max-width: 768px) {
+    .proximos-shows {min-height: 260px;
+        padding-top: 4%;}
+        .proximos-shows ul { padding-top:25px;}
+}
+
+
+/*----------------425-----------------*/
+@media  (max-width: 425px) {
+    .proximos-shows {min-height: 150px;
+        padding-top:5%;
+    margin-top:-1%;}
+    .Fecha {font-size: 22px;}
+    .proximos-shows ul {padding:2%;}
+
+    .proximos-shows ul li {font-size:1.7rem;
+        line-height: 24px;
+        height: 50px;
+overflow: hidden;
+    }
+}

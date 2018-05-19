@@ -25,41 +25,127 @@ ul {
 header {
   width: 100%;
   background-color: #088080;
-  height: 80px;
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000000000; }
+  z-index: 1000000000;
+  -webkit-box-shadow: 0px 3px 8px 0px #065252;
+  -moz-box-shadow: 0px 3px 8px 0px #065252;
+  box-shadow: 0px 3px 8px 0px #065252; }
 
 .logo {
-  width: 50%;
-  padding-left: 20px;
+  width: 100%;
   text-align: center;
   color: white; }
 
 .logo a p {
   font-family: 'Fira Sans Condensed 900', sans-serif;
   font-size: 60px;
-  padding-top: 5px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 2%; }
 
 .main-menu {
+  width: 100%;
   font-family: 'Fira Sans Condensed 300', sans-serif;
-  width: 50%;
   float: right;
-  font-size: 22px;
+  font-size: 25px;
   display: block;
-  margin-top: -45px;
-  color: white; }
+  text-align: center;
+  color: white;
+  padding-bottom: 1%; }
 
 .main-menu a {
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 4%;
+  padding-right: 4%; }
+
+#menuToggle {
+  display: none; }
+
+/*----------------------------QUERIES--------------------------------*/
+/*----Queries---*/
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .main-menu {
+    display: none; }
+  .logo a p {
+    margin-bottom: 0;
+    margin-top: 2%; }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: -40px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none; }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white; }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  #menu {
+    position: absolute;
+    width: 300px;
+    height: 1000vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #088080;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  #menu li {
+    padding: 10px 0;
+    font-size: 24px; }
+  #menuToggle input:checked ~ ul {
+    transform: none; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .logo a p {
+    font-size: 24px;
+    margin-top: 4%; }
+  #menuToggle {
+    top: -25px;
+    left: 50px; } }
 
 .slider {
   width: 100%;
-  min-height: 100px;
-  margin: auto;
+  height: auto;
+  margin-top: 9%;
   overflow: hidden; }
 
 .slider ul {
@@ -94,67 +180,37 @@ header {
   100% {
     margin-left: -300%; } }
 
-/*---------------- ULTIMAS NOTICIAS --------------------*/
+/*---queries---*/
+@media (max-width: 768px) {
+  .slider {
+    margin-top: 14%; } }
+
 .ultimas_noticias {
-  width: 95%;
-  height: 460px;
-  background-color: #088080;
-  padding-top: 200px; }
-
-.ultimas_noticias p {
-  float: right;
-  width: 50%;
-  color: white;
-  margin-top: -358px;
-  font-size: 16px;
-  padding-right: 30px;
-  line-height: 24px; }
-
-.cleaner {
-  clear: both; }
-
-.contenedor-foto-1 {
   width: 100%;
-  padding-left: 0px;
-  padding-top: 10px; }
-
-.contenedor-foto-1 img {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425); }
-
-.subtitulo {
-  font-size: 25px;
-  line-height: 30px;
-  border-bottom: white;
-  border-bottom-style: solid;
-  border-bottom-width: 0.5px; }
-
-.ultimas_noticias {
-  width: 95%;
-  min-height: 460px;
+  min-height: 500px;
   background-color: #088080;
   padding: 1%;
-  margin: auto; }
+  margin-top: -1%;
+  padding-top: 3%; }
 
 .ultimas_noticias p {
-  float: right;
   width: 50%;
+  float: right;
   color: white;
-  font-size: 16px;
-  padding-left: 1%;
-  padding-right: 2%;
-  line-height: 23px;
-  text-align: justify; }
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: justify;
+  padding-right: 5%;
+  padding-top: 2%; }
 
 .cleaner {
   clear: both; }
 
 .contenedor-foto-1 {
-  width: 100%;
-  /*padding-left: 0px;
-    padding-top: 10px;*/
-  padding-left: 2%;
-  /*padding-right: 1%;*/
-  padding-top: 1.5%; }
+  width: 50%;
+  float: left;
+  padding-left: 5%;
+  padding-top: 2%; }
 
 .contenedor-foto-1 img {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425); }
@@ -166,12 +222,67 @@ header {
   border-bottom-style: solid;
   border-bottom-width: 0.5px; }
 
+.chica {
+  display: none; }
+
+/*----Queries---*/
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .ultimas_noticias p {
+    float: none;
+    padding-right: 0;
+    width: 80%;
+    margin: auto; }
+  .contenedor-foto-1 {
+    float: none;
+    padding-left: 0;
+    width: 80%;
+    margin: auto; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .ultimas_noticias p {
+    float: none;
+    padding-right: 0;
+    width: 80%;
+    margin: auto; }
+  .contenedor-foto-1 {
+    float: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 0; }
+  .grande {
+    display: none; }
+  .chica {
+    display: block; } }
+
+/*------------------375-----------------------*/
+@media (max-width: 375px) {
+  .ultimas_noticias p {
+    float: none;
+    padding-right: 0;
+    width: 80%;
+    margin: auto; }
+  .contenedor-foto-1 {
+    float: none;
+    margin: auto;
+    padding-left: 0; }
+  .grande {
+    display: none; }
+  .chica {
+    display: none; }
+  .subtitulo {
+    font-size: 22px;
+    line-height: 18px; }
+  .ultimas_noticias p {
+    font-size: 1.7rem; } }
+
 .proximos-shows {
-  width: 95%;
-  height: 320px;
+  width: 100%;
+  min-height: 320px;
   margin: auto;
   background-color: #088080;
-  padding-top: 40px; }
+  padding-top: 0.5%; }
 
 .proximos-shows ul {
   padding-top: 50px;
@@ -194,13 +305,45 @@ header {
   background-color: white;
   color: #088080; }
 
+/*----Queries---*/
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .proximos-shows ul li {
+    font-size: 15px;
+    line-height: 28px; }
+  .Fecha {
+    font-size: 35px; } }
+
+/*----------------768-----------------*/
+@media (max-width: 768px) {
+  .proximos-shows {
+    min-height: 260px;
+    padding-top: 4%; }
+  .proximos-shows ul {
+    padding-top: 25px; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .proximos-shows {
+    min-height: 150px;
+    padding-top: 5%;
+    margin-top: -1%; }
+  .Fecha {
+    font-size: 22px; }
+  .proximos-shows ul {
+    padding: 2%; }
+  .proximos-shows ul li {
+    font-size: 1.7rem;
+    line-height: 24px;
+    height: 50px;
+    overflow: hidden; } }
+
 .la-banda {
-  width: 95%;
+  width: 100%;
   min-height: 740px;
   margin: auto;
   margin-top: 0px;
-  background-color: #088080;
-  padding-top: 20px; }
+  background-color: #088080; }
 
 .la-banda ul {
   margin-right: 10px;
@@ -213,25 +356,45 @@ header {
   float: left;
   display: block;
   color: white;
-  font-size: 2.2rem;
   text-align: center;
   padding: 0;
   line-height: 2.2rem;
-  padding-top: 30px; }
+  padding-top: 40px; }
 
 .la-banda ul li p {
-  font-size: 1.5rem; }
+  font-size: 1.6rem;
+  width: 96%;
+  margin: auto;
+  padding-top: 1.2%; }
 
 .la-banda ul li img {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.425); }
 
+.nombre {
+  font-size: 2.4rem;
+  padding-top: 1.5%;
+  font-weight: 600; }
+
+/*----Queries---*/
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .la-banda ul li {
+    width: 50%; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .la-banda ul li {
+    width: 100%;
+    float: none; } }
+
 .historia-banda {
-  width: 95%;
-  height: 900px;
+  width: 100%;
+  height: auto;
   margin: auto;
   background-color: #088080;
   background-image: url(https://3.bp.blogspot.com/-UGXGiS9fwus/WYOTOYwzSJI/AAAAAAAAC6M/danwas_s3Qoq99O55U-pNLa0_M68mokbgCLcBGAs/s1600/FotoLaVElaNueva.jpg);
-  padding-top: 30px; }
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .historia-banda p {
   color: white;
@@ -246,8 +409,28 @@ header {
   padding-right: 30px;
   padding-top: 20px; }
 
+/*----Queries---*/
+/*----------------768-----------------*/
+@media (max-width: 768px) {
+  .historia-banda p:nth-child(odd) {
+    display: none; }
+  .historia-banda p {
+    font-size: 1.8rem;
+    line-height: 2.8rem; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .historia-banda p {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    text-align: justify;
+    padding-bottom: 2%;
+    line-height: 2.3rem; } }
+
 .discografia {
-  width: 95%;
+  width: 100%;
   min-height: 920px;
   margin: auto;
   background-color: #088080;
@@ -257,7 +440,7 @@ header {
   width: 280px;
   height: 280px;
   float: left;
-  margin-left: 3.1%;
+  margin-left: 3.9%;
   margin-right: 3.1%;
   margin-top: 6rem;
   margin-bottom: 6rem; }
@@ -277,18 +460,32 @@ header {
   cursor: pointer; }
 
 .descripcion {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   background-color: rgba(8, 128, 128, 0.8);
   opacity: 0;
-  font-size: 2rem;
+  padding: 0;
   color: white;
-  padding: 1rem;
   text-align: center; }
 
-.textocorrido {
-  font-size: 1rem; }
+table td:nth-child(1) {
+  width: 5%; }
+
+table td:nth-child(2) {
+  width: 80%; }
+
+table td:nth-child(3) {
+  width: 15%; }
+
+table td {
+  border-bottom: solid 1px white;
+  padding: 0%;
+  border-spacing: 0px; }
+
+td {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
 
 .imagen1:hover .descripcion {
   opacity: 1; }
@@ -384,13 +581,49 @@ header {
 .imagen8:hover .descripcion {
   opacity: 1; }
 
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .cds {
+    padding-left: 125px; }
+  .cds p {
+    text-align: center;
+    width: 170%; }
+  .discografia {
+    height: 1750px; } }
+
+/*---------------768-----------*/
+@media (max-width: 768px) {
+  .cds {
+    padding-left: 60px; }
+  .cds p {
+    text-align: center;
+    width: 130%; } }
+
+/*---------------720-----------*/
+@media (max-width: 720px) {
+  .cds {
+    padding-left: 35px; } }
+
+/*---------------425-----------*/
+@media (max-width: 425px) {
+  .discografia {
+    height: 3300px; } }
+
+/*---------------364-----------*/
+@media (max-width: 364px) {
+  .cds {
+    padding-left: 30px; } }
+
 .contacto {
-  width: 95%;
+  width: 100%;
   height: 450px;
   margin: auto;
   background-color: #088080;
   padding-top: 20px;
   border: none; }
+
+#contacto {
+  height: 450px; }
 
 h3 {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -412,14 +645,15 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 0;
   cursor: pointer;
-  width: 45%;
+  width: 49%;
   height: 10%;
   font-size: 1.1rem;
   text-align: center; }
 
 label {
   font-size: 1.8rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: white; }
 
 #country {
   width: 100%; }
@@ -445,277 +679,63 @@ h4 {
 .pais {
   margin-top: -20px; }
 
-
-  footer {width: 100%;
-    text-align: center;}
-/*-------------------------------------------------------------------------MEDIA QUERIES-------------------------------------------------------------*/
-
-
-/*-----------------------------------------------960---------------------------------------------------------------------*/
-
-@media  (max-width: 960px) { 
-  .logo a p {    
-      font-size: 45px;
-     padding-top: 14px;
-  font-weight: 600;}
-
-  .main-menu {
-      width:50%;
-      
-      font-size: 19px;
-      display:block;
-      margin-top: -36px;
-     
-      
-      }
-
-  .main-menu a { padding-left:6px;
-          padding-right:6px;
-          }
-
-  .slider { margin-top:40px;
-  height: 650px;}     
-
-/*------------------------------------------*/
-.ultimas_noticias {
-  height: 460px;
-  margin: auto;
-  margin-top: -110px;    
-  padding-top: 20px;
-  
-}
-
-.subtitulo {text-align: center;
-padding-left: 0px;
-padding-top: 10px;
-}
-
-
-.ultimas_noticias p {float:none;
-               width:80%;
-               margin:auto;
-               padding-left: 18px;
-               padding-top: 20px;}
-
-.contenedor-foto-1 {width: 60%;
-  margin-left:80px;
-  padding-top: 20px;
-  }
-
-/*----------------------------------------------*/
-
-
-.proximos-shows {
-  height: 320px;
-  margin: auto;
-  margin-top: 0px;
-  background-color: rgb(8, 128, 128);
-  padding-top: 410px;
-  }
-
-.proximos-shows ul {padding-left:10px;}
-
-
-/*------------------------------------------------------*/
-
-.la-banda {
-  height: 1150px;
-  margin: auto;
-  padding-top: 330px;}
-
-.la-banda ul {margin-right: 5px;
-      }
-
-.la-banda ul li {width: 33.33%;
-float: left;    
-display:block;
-color: white;
-font-size:1.8rem;
-text-align: center;
-padding: 0;
-line-height: 2.2rem;
-padding-top: 30px;
-}   
-
-.la-banda ul li p {font-size: 1.3rem;
-                width: 96%;
-              margin:auto;}
-
-.la-banda ul li img {width: 90%;}
-
-/*------------------------------------------------*/
-
-.historia-banda {
-  height: 1400px;}
-
-/*--------------------------------------------------*/
-
-.cds {padding-left: 120px;
-  }
-
-.cds p {text-align: center;
-  width: 150%;}
-
-.discografia { 
-      height: 1750px;}
-
-/*--------------------------------------------------------*/
-
-form {
-  padding-left:350px;}}
-
-  /*-----------------------------------------------------------------------400-------------------------------------------------------------------------*/
-@media (max-width: 400px) {
-
-  .header {
-   height:80px;
-   }
-
-.logo {width: 100%;
-   padding-left:0px;
-   padding-right: 0px;
-   padding-top:6px;
-   }
-   
-   .logo a p {    
-        font-size: 5rem;
-        font-weight: 600;
-       }
-                  
-   .main-menu {background-color: rgb(8, 128, 128);
-   width: 100%;
-   height: 51px;
-      padding-top: 15px;
-      padding-left: 10%;
-      margin:auto;
-float: none;
-font-size: 26px;
-}
-
-.main-menu a { padding-left:10px;
-  padding-right:10px;
-  }
-  
-   .slider {width: 205%;
-       height: 450px;
-       margin-top: 128px;
-   }
-/*---------------------------*/
-   .ultimas_noticias {width:205%;
-   height: 902px;
-   padding:0;
-   padding-top:45px;
-   margin-top:-4px;
-padding-left: 20px;}
-
-   .ultimas_noticias p {float:none;
-   margin:auto;
-padding-top:22px;
-width: 90%;
-text-align:justify;
-font-size: 2.8rem;
-line-height: 38px;
-height: 51%;
-overflow: hidden;}
-
-.contenedor-foto-1 {margin:auto;
-padding-left:0;
-width: 90%;
-padding-top: 3%;}
-
-.subtitulo {font-size:3rem;}
-
-/*----------------------------------------*/
-   
-.proximos-shows {width: 205%;
-height: 860px;
-padding-right:35px;
-padding-top:60px;}   
-
-.proximos-shows ul li {width: 54%;
-  font-size: 2.8rem;
-   line-height: 3.8rem;
-   float:none;
-   margin:auto;
-   padding-top:45px;
-
-}
-
-.proximos-shows ul {padding-top:10px;}
-
-
-/*--------------------------------------*/
-.la-banda {width:205%;
-   height: 1550px;
-  padding-top:10px;
-margin-top:-3px;}
-
-.la-banda ul li {width: 50%;
-       float: left; 
-       font-size:2.7rem;
-       font-weight: 600;
-   line-height: 4rem;
-   margin-top:20px;
-  
-}
-
-.la-banda ul li p {width: 95%;
-  height: 150px;
-  overflow: hidden;
-    font-size: 2.5rem;
-line-height: 3.2rem;
-text-align: center;
-font-weight: 400;
-margin:10px;
-
-}
-
-/*-------------------------------*/
-.historia-banda {width:205%;
-   height: 900px;
-   margin: auto;}
-
-.historia-banda p:nth-child(2) {display: none;}
-
-/*----------------------------------*/
-
-.discografia { width:205%;
-   height: 1752px;
-  }
-
-.cds {padding-left:9.5%;}
-
-.cds p {width: 138%;
-font-size: 2.5rem;}
-  
-/*---------------------------------*/
-
-.contacto {width:205%;
-  height: 452px;
-  margin: auto;}
-
-
-h3 {font-size:2.5rem;}
-
-h4 {background-color: rgb(8, 128, 128);
-       width:205%;
-       margin:auto;
-      }
-
-form {padding:300px;
-  
-}
-
-.contacto div{ width: 120%;
-padding-top:9%;}
-
-.pais {margin-top:-30px;}
-
-input[type=text]{width:102%;}
-
-footer {width: 200%;}
-}
-
-input[type=button], input[type=submit], input[type=reset], {font-size: 4rem;}
-
-select#country {width: 90%;}
+/*----------------960-----------------*/
+@media (max-width: 960px) {
+  .contacto {
+    height: 500px; } }
+
+/*----------------768-----------------*/
+@media (max-width: 768px) {
+  form {
+    padding-right: 20%;
+    padding-left: 20%; } }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  form {
+    padding-right: 20%;
+    padding-left: 20%; } }
+
+.footer {
+  background-color: white;
+  width: 100%;
+  font-size: 2rem;
+  height: 25px; }
+
+.redes {
+  font-size: 2rem;
+  color: #088080; }
+
+.texto {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: #088080; }
+
+.texto p {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+/*----------------425-----------------*/
+@media (max-width: 425px) {
+  .footer {
+    font-size: 1.3rem; }
+  .texto p {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .yo {
+    padding-top: 1%; }
+  .texto p {
+    padding-top: 1%; } }
+
+/*----------------375-----------------*/
+@media (max-width: 375px) {
+  .footer {
+    font-size: 1.2rem; }
+  .texto p {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .yo {
+    padding-top: 1%; }
+  .texto p {
+    padding-top: 1.2%; } }
