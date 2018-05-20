@@ -22,6 +22,9 @@ ul {
 .pepe {
   text-align: center; }
 
+h2 {
+  display: none; }
+
 header {
   width: 100%;
   background-color: #088080;
@@ -625,7 +628,7 @@ td {
 #contacto {
   height: 450px; }
 
-h3 {
+.tituloscontacto {
   font-family: 'Fira Sans Condensed', sans-serif;
   color: white;
   font-size: 20px;
